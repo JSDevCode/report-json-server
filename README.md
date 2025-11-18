@@ -29,7 +29,7 @@ The purpose of this technical report is to demonstrate how to:
 
 ## Prerequisites
 
-- `Node.js` installed locally.
+- `Node.js` installed on your machine.
 
 ## Getting Started
 
@@ -95,7 +95,7 @@ appear in the file with JSON-server–generated IDs:
 
 ## Usage
 
-You can use tools like Postman to test API calls:
+You can use tools like Postman to test API calls.
 
 - GET: /users
 - POST: /users
@@ -107,11 +107,19 @@ so that requests (GET, POST, PUT, DELETE, etc.) to `http://localhost:3000/<colle
 
 ![Postman request and response](/assets/postman.png)
 
+You can test the API in several ways besides Postman, such as:
+
+- Using `curl` in the terminal
+- Opening GET endpoints directly in the browser (e.g. http://localhost:3000/users)
+- Using any HTTP client or frontend code that sends requests (fetch, Axios, etc.)
+
 ## Pros
 
 - Fast setup, Quick installation
 
 - Minimal coding required and easy to understand
+
+- Several ways to test the API, including using a web browser, curl, or tools like Postman.
 
 - Perfect for frontend testing and learning REST APIs
 
@@ -120,7 +128,9 @@ so that requests (GET, POST, PUT, DELETE, etc.) to `http://localhost:3000/<colle
 ## Cons
 
 - Limited functionality (cannot handle complex logic, such as generating data or testing authentication)
+
 - Static data
+
 - Must be updated manually or via POST/PUT.
 
 ## Conclusion
