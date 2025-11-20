@@ -104,7 +104,7 @@ JSON-server automatically creates an id for the new item and adds it to the coll
 
 ## Usage
 
-You can use different tools to test API calls. Postman is used in the screenshot as an example, but any HTTP client works.
+You can use different tools to test API calls. Postman is used in the screenshot as an example, but any HTTP client will work.
 
 - GET: /users
 - POST: /users
@@ -118,8 +118,26 @@ so that requests (GET, POST, PUT, DELETE, etc.) to `http://localhost:3000/<colle
 
 You can test the API in several ways besides Postman, such as:
 
-- Using `curl` in the terminal
-- Opening GET endpoints directly in the browser (e.g. http://localhost:3000/users)
+- Using `curl` in the terminal:
+
+```
+ curl http://localhost:3000/users
+```
+
+Or for better JSON formatting:
+
+```
+curl http://localhost:3000/users | jq
+
+```
+
+- Opening GET endpoints directly in the browser:
+
+```
+http://localhost:3000/users
+
+```
+
 - Using any HTTP client or frontend code that sends requests (fetch, Axios, etc.)
 
 ## Pros
