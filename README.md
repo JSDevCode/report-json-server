@@ -116,9 +116,9 @@ so that requests (GET, POST, PUT, DELETE, etc.) to `http://localhost:3000/<colle
 
 ![Postman request and response](/assets/postman.png)
 
-You can test the API in several ways besides Postman, such as:
+You can test GET requests in several ways besides Postman, such as:
 
-- Using `curl` in the terminal:
+- GET request using `curl` in the terminal:
 
 ```
  curl http://localhost:3000/users
@@ -131,12 +131,20 @@ curl http://localhost:3000/users | jq
 
 ```
 
-- Opening GET endpoints directly in the browser:
+- GET request in the browser directly to the collection:
 
 ```
 http://localhost:3000/users
 
 ```
+
+- Or view the first page (JSON-server default) and click on the collection name:
+
+```
+http://localhost:3000/
+```
+
+![JSON-server default browser view](/assets/browser.png)
 
 - Using any HTTP client or frontend code that sends requests (fetch, Axios, etc.)
 
