@@ -127,7 +127,7 @@ You can test GET requests in several ways besides Postman, such as:
 Or for better JSON formatting:
 
 ```
-curl http://localhost:3000/users | jq
+curl -s http://localhost:3000/users | jq
 
 ```
 
