@@ -78,7 +78,7 @@ endpoints:
 ## Example Data
 
 The `db.json` file contains a sample collection like the one below. You can create
-the data manually in the `db.json` file, or use Postman to POST new data and watch it
+the data manually in the `db.json` file, or use tools like Postman to POST new data and watch it
 appear in the file with JSON-server–generated IDs:
 
 ```
@@ -92,6 +92,19 @@ appear in the file with JSON-server–generated IDs:
   ]
 }
 ```
+
+### Example POST body
+
+When sending a POST request to create a new item, for example a new user, the request body can look like this:
+
+```
+{
+  "name": "New User",
+  "email": "new.user@example.com"
+}
+```
+
+JSON-server automatically creates an id for the new item and adds it to the collection in db.json.
 
 ## Usage
 
