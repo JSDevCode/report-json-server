@@ -17,6 +17,7 @@ It is useful for testing when the backend code is not written or fully developed
 - [Cons](#cons)
 - [Conclusion](#conclusion)
 - [Notes](#notes)
+- [References](#references)
 
 ## Purpose
 
@@ -70,11 +71,6 @@ npx json-server --watch db.json
 6. Open http://localhost:3000
    to access the API.
 
-When the server starts, it looks like this in the terminal and you can also see the
-endpoints:
-
-![Starting JSON-servern](/assets/start-server.png)
-
 ## Example Data
 
 The `db.json` file contains a sample collection like the one below. You can create
@@ -108,7 +104,7 @@ JSON-server automatically creates an id for the new item and adds it to the coll
 
 ## Usage
 
-You can use tools like Postman to test API calls.
+You can use different tools to test API calls. Postman is used in the screenshot as an example, but any HTTP client works.
 
 - GET: /users
 - POST: /users
@@ -158,3 +154,7 @@ While it has limited functionality and is not suitable for production, it is exc
 - node_modules/ is ignored in Git.
 
 - This project is intended as a learning and testing resource only.
+
+## References
+
+[1] "json-server," npm. [Online]. Available: https://www.npmjs.com/package/json-server [Accessed: Nov. 17, 2025].
