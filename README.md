@@ -116,20 +116,7 @@ so that requests (GET, POST, PUT, DELETE, etc.) to `http://localhost:3000/<colle
 
 ![Postman request and response](/assets/postman.png)
 
-You can test GET requests in several ways besides Postman, such as:
-
-- GET request using `curl` in the terminal:
-
-```
- curl http://localhost:3000/users
-```
-
-Or for better JSON formatting:
-
-```
-curl -s http://localhost:3000/users | jq
-
-```
+You can test requests in several ways besides Postman, such as:
 
 - GET request in the browser directly to the collection:
 
@@ -145,6 +132,28 @@ http://localhost:3000/
 ```
 
 ![JSON-server default browser view](/assets/browser.png)
+
+- GET request using `curl` in the terminal:
+
+```
+ curl http://localhost:3000/users
+```
+
+Or for better JSON formatting:
+
+```
+curl -s http://localhost:3000/users | jq
+
+```
+
+- POST request using `curl` in the terminal:
+
+```
+curl -X POST http://localhost:3000/users \
+  -H "Content-Type: application/json" \
+  -d '{"name":"test2","email":"test2@example.com"}'
+
+```
 
 - Using any HTTP client or frontend code that sends requests (fetch, Axios, etc.)
 
