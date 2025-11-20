@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is an example project and a technical guide for running a JSON-server as a mock API. It provides a simple setup to quickly test REST API calls without a real backend.
+This is an example repository and a technical guide for running a JSON-server as a mock API. It provides a simple setup to quickly test REST API calls without a real backend.
 
 It is useful for testing when the backend code is not written or fully developed yet, or simply to quickly experiment without affecting your real database. It starts a mock API server based on the `db.json` file.
 
@@ -23,10 +23,10 @@ It is useful for testing when the backend code is not written or fully developed
 
 The purpose of this technical report is to demonstrate how to:
 
-- Set up JSON-server in a project.
+- Set up JSON-server in a project
 - Create a `db.json` with example data
-- Make HTTP requests (GET, POST, PUT, DELETE) to a mock API
-- Serve as a reference for testing frontend applications, learning REST, and experimenting with API routes.
+- Make HTTP requests (GET, POST) to a mock API
+- Serve as a reference for learning how to use JSON-server with REST
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ The purpose of this technical report is to demonstrate how to:
 
 ## Getting Started
 
-1. Open a terminal in the folder where you want the project.
+1. Open a terminal in your folder
 
 2. Clone the repository:
 
@@ -42,7 +42,7 @@ The purpose of this technical report is to demonstrate how to:
 git clone git@github.com:JSDevCode/report-json-server.git
 ```
 
-3. Change directory into the project:
+3. Change directory into the repository:
 
 ```
 cd report-json-server
@@ -54,7 +54,9 @@ cd report-json-server
 npm install
 ```
 
-5. Start JSON-server:
+5. Create a `db.json` file
+
+6. Start JSON-server:
 
 - To run the server once:
 
@@ -68,13 +70,13 @@ npx json-server db.json
 npx json-server --watch db.json
 ```
 
-6. Open http://localhost:3000
+7. Open http://localhost:3000
    to access the API.
 
 ## Example Data
 
 The `db.json` file contains a sample collection like the one below. You can create
-the data manually in the `db.json` file, or use tools like Postman to POST new data and watch it
+the data manually in the `db.json` file, or use tools like Curl or Postman to POST new data and watch it
 appear in the file with JSON-server–generated IDs:
 
 ```
@@ -89,8 +91,6 @@ appear in the file with JSON-server–generated IDs:
 }
 ```
 
-### Example POST body
-
 When sending a POST request to create a new item, for example a new user, the request body can look like this:
 
 ```
@@ -100,11 +100,9 @@ When sending a POST request to create a new item, for example a new user, the re
 }
 ```
 
-JSON-server automatically creates an id for the new item and adds it to the collection in db.json.
-
 ## Usage
 
-You can use different tools to test API calls. Postman is used in the screenshot as an example, but any HTTP client will work.
+You can use different tools to test API calls. Postman is used in the screenshot as an example, but any HTTP client will work. Here are examples of the most common REST methods. In this guide the focus will be on GET and POST.
 
 - GET: /users
 - POST: /users
@@ -167,7 +165,7 @@ curl -X POST http://localhost:3000/users \
 
 - Perfect for frontend testing and learning REST APIs
 
-- Good for quickly creating an early version of an app to try out ideas.
+- Good for quickly creating an early version of an app to test ideas.
 
 ## Cons
 
